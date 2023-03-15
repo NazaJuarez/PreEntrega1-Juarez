@@ -15,15 +15,20 @@ body{
     font-weight: bold;
     color: #fcfcfc;
     text-align: center;
-    margin-bottom: 30px;
+    margin:50px;
 }
 
-.boton{
-    text-align: center;
+.nombreJugador{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e2294;
+    background-color:#fcfcfc ;
 }
 
 .button-start{
-    width: 30%;
+    width: 10%;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
@@ -59,9 +64,10 @@ body{
     padding: 0, 50px;
 }
 
-.personajes li{
+.cardPersonaje {
     display: inline-block;
-    width: 90%;
+    width: 400;
+    height: 500px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -70,11 +76,11 @@ body{
     text-decoration: none;
 }
 
-.personajes li:hover{
+.cardPersonaje:hover{
     border-color: #dba0fd;
 }
 
-.personajes li:active{
+.cardPersonaje:active{
     border-color: #FFFFFF;
 }
 
@@ -84,7 +90,7 @@ body{
     color: #fcfcfc;
 }
 
-.personajes img{
+.cardPersonaje img{
     width: 100%;
     height: 100%;
     margin-top: 25px;
@@ -94,7 +100,7 @@ body{
 }
 
 
-.personajes p{
+.cardPersonaje p{
     font-size: 1.3rem;
     font-weight: bold;
     color: #fcfcfc;
@@ -102,8 +108,99 @@ body{
 
 @media only screen and (min-width: 768px){
     
-    .personajes li{
-        display: block;
+    .cardPersonaje{
+        display: inline-block;
     }
 
 }
+
+.contenedor{
+    width: 920px;
+    height: 300px;
+    margin: 0 auto;
+
+}
+
+.personajeSeleccionado{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+
+    background: url(../img/4100_5_03-removebg-preview.png) no-repeat 0px 0px;
+    background-size: 300px 250px;
+    background-position: 0;
+}
+
+
+.espacio{
+    width: 200%;
+    height: 42px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background: url(../img/5473791.jpg) repeat-x 0px 0px;
+    background-size: 50% 42px;
+}
+
+.meteorito{
+    width: 150px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+
+    background: url(../img/912-9126983_estrella-png-removebg-preview.png) no-repeat;
+}
+
+.nube{
+    width: 100px;
+    height: 200px;
+
+    position: absolute;
+    z-index: 0;
+
+    background: url(../img/912-9126983_estrella-png-removebg-preview.png) no-repeat;
+    background-size: 92px 26px;
+}
+
+.score{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+}
+
+@keyframes animarPersonaje {
+    from{
+        background-position-x: -84px;
+    }
+    to{
+        background-position-x: -252px;
+    }
+}
+
+.game-over{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
