@@ -4,16 +4,16 @@ let cantidadTarjetas=10;
 
 const cargarPersonajes=()=>{
     personajes=[
-        '<img src=../img/alien.png>',
-        '<img src=../img/astronauta.png>',
-        '<img src=../img/estrella.png>',
-        '<img src=../img/kitten.png>',
-        '<img src=../img/meteorito.png>',
-        '<img src=../img/alienHappy.jpg>',
-        '<img src=../img/astronautaCohete.jpg>',
-        '<img src=../img/espacioExterior.jpg>',
-        '<img src=../img/espacioExterior2.jpg>',
-        '<img src=../img/planeta.jpg>',
+        '<img src=img/alien.png>',
+        '<img src=img/astronauta.png>',
+        '<img src=img/estrella.png>',
+        '<img src=img/kitten.png>',
+        '<img src=img/meteorito.png>',
+        '<img src=img/alienHappy.jpg>',
+        '<img src=img/astronautaCohete.jpg>',
+        '<img src=img/espacioExterior.jpg>',
+        '<img src=img/espacioExterior2.jpg>',
+        '<img src=img/planeta.jpg>',
     ]
 }
 
